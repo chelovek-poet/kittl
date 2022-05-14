@@ -34,7 +34,7 @@ exports.PdpPage = class PdpPage {
   // Actions
   //--------------------------------------------------------------------------------------------------------------------
   async openPage(itemNumber) {
-    await this.page.goto('https://www.saucedemo.com/inventory-item.html?id=' + itemNumber);
+    await this.page.goto('/inventory-item.html?id=' + itemNumber);
   }
 
   async clickAddToCart() {
@@ -56,7 +56,7 @@ exports.PdpPage = class PdpPage {
  // Expects
   //--------------------------------------------------------------------------------------------------------------------
   async expectPageOpened() {
-    await expect(this.page).toHaveURL(/https:\/\/www\.saucedemo\.com\/inventory-item\.html\?id=.+/);
+    await expect(this.page).toHaveURL(/\/inventory-item\.html\?id=.+/);
   }
 
   async expectItemTitle(title) {

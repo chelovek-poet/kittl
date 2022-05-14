@@ -30,7 +30,7 @@ exports.AuthPage = class AuthPage {
   // Actions
   //--------------------------------------------------------------------------------------------------------------------
   async openPage() {
-    await this.page.goto('https://www.saucedemo.com/');
+    await this.page.goto('/');
   }
 
   async enterLoginPass(login, password) {
@@ -45,7 +45,7 @@ exports.AuthPage = class AuthPage {
  // Expects
   //--------------------------------------------------------------------------------------------------------------------
   async expectPageOpened() {
-    await expect(this.page).toHaveURL("https://www.saucedemo.com/");
+    await expect(this.page).toHaveURL("/");
   }
 
   async expectWrongLoginPassError() {

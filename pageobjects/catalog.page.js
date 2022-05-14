@@ -34,7 +34,7 @@ exports.CatalogPage = class CatalogPage {
   // Actions
   //--------------------------------------------------------------------------------------------------------------------
   async openPage() {
-    await this.page.goto('https://www.saucedemo.com/inventory.html');
+    await this.page.goto('/inventory.html');
   }
 
   async getItemsCount() {
@@ -65,7 +65,7 @@ exports.CatalogPage = class CatalogPage {
  // Expects
   //--------------------------------------------------------------------------------------------------------------------
   async expectPageOpened() {
-    await expect(this.page).toHaveURL("https://www.saucedemo.com/inventory.html");
+    await expect(this.page).toHaveURL("/inventory.html");
   }
 
   async expectAddToCartButtonPressed(itemNumber, isPressed) {

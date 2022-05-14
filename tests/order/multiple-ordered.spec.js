@@ -15,7 +15,7 @@ test.describe("Order tests", () => {
     await authPage.enterLoginPass(GLITCH_USER.login, GLITCH_USER.password);
     await authPage.clickLogin();
 
-    await catalogPage.openPage();
+    await catalogPage.expectPageOpened();
     const itemsCount = await catalogPage.getItemsCount();
     let totalPrice = 0;
     for (let i = 0; i < itemsCount; i++) {

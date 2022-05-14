@@ -58,7 +58,7 @@ exports.CheckoutPage = class CheckoutPage {
   // Actions
   //--------------------------------------------------------------------------------------------------------------------
   async openPage() {
-    await this.page.goto('https://www.saucedemo.com/checkout-step-one.html');
+    await this.page.goto('/checkout-step-one.html');
   }
 
   async fillUserInfo(user) {
@@ -86,11 +86,11 @@ exports.CheckoutPage = class CheckoutPage {
  // Expects
   //--------------------------------------------------------------------------------------------------------------------
   async expectPageOpened() {
-    await expect(this.page).toHaveURL("https://www.saucedemo.com/checkout-step-one.html");
+    await expect(this.page).toHaveURL("/checkout-step-one.html");
   }
 
   async expectUserInfoEntered() {
-    await expect(this.page).toHaveURL("https://www.saucedemo.com/checkout-step-two.html");
+    await expect(this.page).toHaveURL("/checkout-step-two.html");
   }
 
   async expectItemsInCheckout(count) {
@@ -110,7 +110,7 @@ exports.CheckoutPage = class CheckoutPage {
   }
 
   async expectCheckoutCompleted() {
-    await expect(this.page).toHaveURL("https://www.saucedemo.com/checkout-complete.html");
+    await expect(this.page).toHaveURL("/checkout-complete.html");
     await expect(this.completeHeader).toHaveText("THANK YOU FOR YOUR ORDER");
   }
 }
