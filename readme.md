@@ -26,4 +26,5 @@ Please keep project structure:
 
 ## How to dockerize
 `docker build . -f Dockerfile -t pricehubble`
+
 `docker run pricehubble`
