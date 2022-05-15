@@ -1,5 +1,9 @@
 # Saucedemo Playwright project
 
+## Preconditions
+* npm
+* docker (for running tests in a container)
+
 ## How to install
 npm i
 
@@ -16,3 +20,10 @@ Please keep project structure:
 * /testData - some additional data for tests
 * package.json - package file for npm so that you can install all the dependencies with a single `npm i` command
 * playwright.config.js - configuration file with Playwright options
+* /playwright-report - folder for test reports
+* /test-results - folder for tests output
+* Dockerfile - for tests dockerization
+
+## How to dockerize
+docker build . -f Dockerfile -t pricehubble
+docker run pricehubble

@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/playwright:v1.21.0-focal
 
 # Copy project
-COPY ./ .
+COPY . /home/priceHubble
 
-WORKDIR /tests
+WORKDIR /home/priceHubble
 
 # Install dependencies
 RUN npm i
