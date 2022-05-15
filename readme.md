@@ -5,10 +5,10 @@
 * docker (for running tests in a container)
 
 ## How to install
-npm i
+`npm i`
 
 ## How to run tests
-npx playwright test
+`npx playwright test`
 
 ## How to contribute
 Just make a pull request with new tests!
@@ -25,5 +25,5 @@ Please keep project structure:
 * Dockerfile - for tests dockerization
 
 ## How to dockerize
-docker build . -f Dockerfile -t pricehubble
-docker run pricehubble
+`docker build . -f Dockerfile -t pricehubble`
+`docker run pricehubble`
