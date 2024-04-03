@@ -1,9 +1,9 @@
-FROM mcr.microsoft.com/playwright:v1.21.0-focal
+FROM mcr.microsoft.com/playwright:v1.42.1-jammy
 
 # Copy project
-COPY . /home/priceHubble
+COPY . /home/kittl
 
-WORKDIR /home/priceHubble
+WORKDIR /home/kittl
 
 # Install dependencies
 RUN npm i

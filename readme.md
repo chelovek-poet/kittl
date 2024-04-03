@@ -25,6 +25,6 @@ Please keep project structure:
 * Dockerfile - for tests dockerization
 
 ## How to dockerize
-`docker build . -f Dockerfile -t pricehubble`
+`docker build . -f Dockerfile -t kittl`
 
-`docker run pricehubble`
+`docker run kittl`
