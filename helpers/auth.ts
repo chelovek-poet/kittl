@@ -23,7 +23,6 @@ export default class Auth {
   await req.post('/sessions/create', { data: usersData[user] }).then(async (res) => {
     try {
       const token = await res.json()
-      const tok = token.accessToken
       await context.addCookies([
         {
           name: "htcUserAccessToken",
