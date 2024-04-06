@@ -1,4 +1,4 @@
-# Saucedemo Playwright project
+# Kittl Playwright project
 
 ## Preconditions
 * npm
